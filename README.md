@@ -11,6 +11,7 @@
   * ...
   * На _n_-м шаге мы его сразу знаем
   * _n + (n -1) + ... + 1 = O(n<sup>2</sup>)_
+* Пример исполнения: [sorting.quadratic.Choice](src/main/java/komrachkov/anton/sorting/quadratic/Choice)
 ```
 [5,6,2,3] -> [2,6,5,3] -> [2,3,5,6] -> [2,3,5,6] -> [2,3,5,6]
 ```
