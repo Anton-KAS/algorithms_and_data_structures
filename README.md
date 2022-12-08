@@ -12,7 +12,7 @@ source: [Тинькофф образование](https://edu.tinkoff.ru/)
   * ...
   * На _n_-м шаге мы его сразу знаем
   * _n + (n -1) + ... + 1 = <sup>n(n+1)</sup>/<sub>2</sub> = O(n<sup>2</sup>)_
-* Пример исполнения: [sorting.quadratic.Choice](src/main/java/komrachkov/anton/sorting/quadratic/Choice.java)
+* Пример исполнения: [sorting.quadratic.Selection](src/main/java/komrachkov/anton/sorting/quadratic/Selection.java)
 ```
 [5,6,2,3] -> [2,6,5,3] -> [2,3,5,6] -> [2,3,5,6] -> [2,3,5,6]
 ```
@@ -23,7 +23,7 @@ source: [Тинькофф образование](https://edu.tinkoff.ru/)
   * Будем двигать его, пока он не встанет на своё место
   * Получили отсортированный участок размера _k + 1_
   * _n + (n -1) + ... + 1 = <sup>n(n+1)</sup>/<sub>2</sub> = O(n<sup>2</sup>)_
-* Пример исполнения: [sorting.quadratic.Inserts](src/main/java/komrachkov/anton/sorting/quadratic/Inserts.java)
+* Пример исполнения: [sorting.quadratic.Insertion](src/main/java/komrachkov/anton/sorting/quadratic/Insertion.java)
 ```
 [5,3,6,2] -> [3,5,6,2] -> [3,5,2,6] -> [3,2,5,6] -> [2,3,5,6]
 ```

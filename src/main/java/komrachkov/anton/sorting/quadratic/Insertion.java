@@ -3,14 +3,17 @@ package komrachkov.anton.sorting.quadratic;
 import java.util.Arrays;
 
 /**
+ *  <b>Сортировка вставками</b>
+ *  <br>Идея: двигаем элемент влево, пока он не встанет на свое место
  * @author Anton Komrachkov
  * @since (09.12.2022)
  */
 
-public class Inserts {
+public class Insertion {
     static int[] numbers = {5, 6, 2, 3, 9, -1};
 
     public static void main(String[] args) {
+        System.out.println("Сортировка вставками:");
         sortingByInserts();
     }
 

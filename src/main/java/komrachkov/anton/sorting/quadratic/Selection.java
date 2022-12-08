@@ -3,14 +3,13 @@ package komrachkov.anton.sorting.quadratic;
 import java.util.Arrays;
 
 /**
- * <b>Сортировка выбором</b><br>
- * Идея: мы можем n раз выбрать минимум и составить отсортированный массив
- *
+ * <b>Сортировка выбором</b>
+ * <br>Идея: мы можем n раз выбрать минимум и составить отсортированный массив
  * @author Anton Komrachkov
  * @since (09.12.2022)
  */
 
-public class Choice {
+public class Selection {
     static int[] numbers = {5, 6, 2, 3, 9, -1};
 
     public static void main(String[] args) {
