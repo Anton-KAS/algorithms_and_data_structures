@@ -36,7 +36,7 @@ source: [Тинькофф образование](https://edu.tinkoff.ru/)
   * Для одного элемента в худшем случае _n_ обменов
   * Для _n_ элементов _n<sup>2</sup>_ обменов
 * Можно понять, что после _i_ шага последние _i_ элементов отсортированы
-* * Пример исполнения: [sorting.quadratic.Bubble](src/main/java/komrachkov/anton/sorting/quadratic/Bubble.java)
+* Пример исполнения: [sorting.quadratic.Bubble](src/main/java/komrachkov/anton/sorting/quadratic/Bubble.java)
 ```
 проход 1: [5,3,6,2] -> [3,5,6,2] -> [3,5,2,6]
 проход 2: [3,5,2,6] -> [3,2,5,6]
