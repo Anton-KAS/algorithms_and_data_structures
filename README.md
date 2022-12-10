@@ -138,5 +138,8 @@ while c != ’exit ’:
     c = input ()
 print (’bye ’)
 ```
+* Пример использования (Java): [Правильная скобочная последовательность](src/main/java/komrachkov/anton/tasks/t001_bracket_sequence.java)
 
 #### 3. Очередь
+## Задачи
+#### 1. [Правильная скобочная последовательность](src/main/java/komrachkov/anton/tasks/t001_bracket_sequence.java)

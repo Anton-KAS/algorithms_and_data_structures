@@ -29,52 +29,96 @@ public class Stack {
         stackInt.pop();
     }
 
-    public static void printStack(StackInt stackInt) {
-        System.out.println("| " + stackInt);
+//    public static StackInt getStackInt() {
+//        return new StackInt();
+//    }
+
+    public static class StackInt {
+        private List<Integer> instance;
+
+        public StackInt() {
+            this.instance = new ArrayList<>();
+            System.out.println("| " + instance + "\t - Создали пустой стек");
+        }
+
+        public void push(int i) {
+            instance.add(i);
+            System.out.println("| " + instance + "\t <- Положили " + i + " в конец стека");
+        }
+
+        public Integer back() {
+            if (instance.size() < 1) {
+                System.out.println("| " + instance + "\t - Посмотрели значение последнего элемента в стеке: Стек пуст");
+                return null;
+            }
+            int i = instance.get(instance.size() - 1);
+            System.out.println("| " + instance + "\t - Получили значение последнего элемента в стеке:" + i);
+            return i;
+        }
+
+        public Integer pop() {
+            if (instance.size() < 1) {
+                System.out.println("| " + instance + "\t - Невозможно получить элемент из стека: Стек пуст");
+                return null;
+            }
+            int i = instance.get(instance.size() - 1);
+            instance.remove(instance.size() - 1);
+            System.out.println("| " + instance + "\t -> Забрали " + i + " из конца стека");
+            return i;
+        }
+
+        public int size() {
+            return instance.size();
+        }
+
+        @Override
+        public String toString() {
+            return instance.toString();
+        }
     }
 
+    public static class StackString {
+        private List<String> instance;
+
+        public StackString() {
+            this.instance = new ArrayList<>();
+//            System.out.println("| " + instance + "\t - Создали пустой стек");
+        }
+
+        public void push(String s) {
+            instance.add(s);
+//            System.out.println("| " + instance + "\t <- Положили " + i + " в конец стека");
+        }
+
+        public String back() {
+            if (instance.size() < 1) {
+//                System.out.println("| " + instance + "\t - Посмотрели значение последнего элемента в стеке: Стек пуст");
+                return null;
+            }
+            String s = instance.get(instance.size() - 1);
+//            System.out.println("| " + instance + "\t - Получили значение последнего элемента в стеке:" + i);
+            return s;
+        }
+
+        public String pop() {
+            if (instance.size() < 1) {
+//                System.out.println("| " + instance + "\t - Невозможно получить элемент из стека: Стек пуст");
+                return null;
+            }
+            String s = instance.get(instance.size() - 1);
+            instance.remove(instance.size() - 1);
+//            System.out.println("| " + instance + "\t -> Забрали " + i + " из конца стека");
+            return s;
+        }
+
+        public int size() {
+            return instance.size();
+        }
+
+        @Override
+        public String toString() {
+            return instance.toString();
+        }
+    }
 }
 
-class StackInt {
-    private List<Integer> instance;
-
-    public StackInt() {
-        this.instance = new ArrayList<>();
-        System.out.println("| " + instance + "\t - Создали пустой стек");
-    }
-
-    public void push(int i) {
-        instance.add(i);
-        System.out.println("| " + instance + "\t <- Положили " + i + " в конец стека");
-    }
-
-    public Integer back() {
-        if (instance.size() < 1) {
-            System.out.println("| " + instance + "\t - Посмотрели значение последнего элемента в стеке: Стек пуст");
-            return null;
-        }
-        int i = instance.get(instance.size() - 1);
-        System.out.println("| " + instance + "\t - Получили значение последнего элемента в стеке:" + i);
-        return i;
-    }
-
-    public Integer pop() {
-        if (instance.size() < 1) {
-            System.out.println("| " + instance + "\t - Невозможно получить элемент из стека: Стек пуст");
-            return null;
-        }
-        int i = instance.get(instance.size() - 1);
-        instance.remove(instance.size() - 1);
-        System.out.println("| " + instance + "\t -> Забрали " + i + " из конца стека");
-        return i;
-    }
-
-    public int size() {
-        return instance.size();
-    }
-
-    @Override
-    public String toString() {
-        return instance.toString();
-    }
-}
