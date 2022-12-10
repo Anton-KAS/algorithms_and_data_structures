@@ -3,8 +3,9 @@ package komrachkov.anton.sorting.quadratic;
 import java.util.Arrays;
 
 /**
- *  <b>Сортировка вставками</b>
- *  <br>Идея: двигаем элемент влево, пока он не встанет на свое место
+ * <b>Сортировка вставками</b>
+ * <br>Идея: двигаем элемент влево, пока он не встанет на свое место
+ *
  * @author Anton Komrachkov
  * @since (09.12.2022)
  */
@@ -14,10 +15,10 @@ public class Insertion {
 
     public static void main(String[] args) {
         System.out.println("Сортировка вставками:");
-        sortingByInserts();
+        sortingByInserts(numbers);
     }
 
-    public static void sortingByInserts() {
+    public static void sortingByInserts(int[] numbers) {
         System.out.println("Имеем: " + Arrays.toString(numbers));
         int step = 0;
         for (int i = 1; i < numbers.length; i++) {
@@ -35,6 +36,16 @@ public class Insertion {
                             + " (" + numbers[j - 1] + " < " + numbers[j] + ") на своих местах");
                 }
 
+            }
+        }
+    }
+
+    public static void sortingIndexByInserts(int[] numbers, int index) {
+        for (int j = index; j > 0; j--) {
+            if (numbers[j] < numbers[j - 1]) {
+                int setValue = numbers[j - 1];
+                numbers[j - 1] = numbers[j];
+                numbers[j] = setValue;
             }
         }
     }

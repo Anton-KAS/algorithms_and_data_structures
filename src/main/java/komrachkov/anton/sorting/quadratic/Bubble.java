@@ -15,10 +15,10 @@ public class Bubble {
 
     public static void main(String[] args) {
         System.out.println("Сортировка пузырьком:");
-        sortingByInserts();
+        sortingByInserts(numbers);
     }
 
-    public static void sortingByInserts() {
+    public static void sortingByInserts(int[] numbers) {
         System.out.println("Имеем: " + Arrays.toString(numbers));
         for (int i = 0; i < numbers.length - 1; i++) {
             System.out.println("Проход: " + (i + 1));
