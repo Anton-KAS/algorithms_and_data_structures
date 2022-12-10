@@ -74,7 +74,11 @@ public class Stack {
         }
 
         public String toStringRevers() {
-            return instance.toString();
+            List<Integer> reversInstance = new ArrayList<>();
+            for (int i = 0; i < instance.size(); i++) {
+                reversInstance.add(i, instance.get(instance.size() - 1 - i));
+            }
+            return reversInstance.toString();
         }
     }
 

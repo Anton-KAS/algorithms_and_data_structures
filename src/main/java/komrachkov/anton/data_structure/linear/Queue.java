@@ -43,7 +43,7 @@ public class Queue {
         }
 
         public void print() {
-            System.out.println("OUT <- " + stackOut + " | " + stackIn + " <- IN");
+            System.out.println("OUT <- " + stackOut.toStringRevers() + " | " + stackIn + " <- IN");
         }
     }
 }
