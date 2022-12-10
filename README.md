@@ -153,6 +153,35 @@ print (’bye ’)
   * Если в левом пусто, перекладываем туда по одному все элементы из правого. Они развернутся.
   * Каждый элемент переложится только 1 раз -> асимптотика _O(n)_
 * Пример исполнения (Java): [data_structure.linear.Queue](src/main/java/komrachkov/anton/data_structure/linear/Queue.java)
+```
+Пример исполнения (Python):
+  b , f = [] , []
+  c = input ()
+  while c != ’exit ’:
+    cmd = c. split ()
+    if cmd [0] == ’push ’:
+      b. append ( cmd [ -1])
+      print (’ok ’)
+    if cmd [0] == ’pop ’:
+    if len (f) == 0:
+      f = list ( reversed ( b))
+      b = []
+    print (f [ -1])
+      f. pop ()
+    if cmd [0] == ’front ’:
+      if len (f) == 0:
+        f = list ( reversed ( b))
+        b = []
+      print (f [ -1])
+    if cmd [0] == ’size ’:
+      print ( len (f) + len ( b))
+    if cmd [0] == ’clear ’:
+      f = []
+      b = []
+      print (’ok ’)
+    c = input ()
+  print (’bye ’)
+ ```
 
 ## Задачи
 #### 1. [Правильная скобочная последовательность](src/main/java/komrachkov/anton/tasks/t001_bracket_sequence.java)
