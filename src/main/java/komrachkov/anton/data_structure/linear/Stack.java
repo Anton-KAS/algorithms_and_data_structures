@@ -8,6 +8,7 @@ import java.util.List;
  * <br> Добавляем только в конец списка
  * <br> Можем посмотреть только последний элемент в стеке
  * <br> Можем получить и удалить последний элемент из стека
+ *
  * @author Anton Komrachkov
  * @since (10.12.2022)
  */
@@ -28,10 +29,6 @@ public class Stack {
         stackInt.pop();
         stackInt.pop();
     }
-
-//    public static StackInt getStackInt() {
-//        return new StackInt();
-//    }
 
     public static class StackInt {
         private List<Integer> instance;
@@ -75,6 +72,10 @@ public class Stack {
         public String toString() {
             return instance.toString();
         }
+
+        public String toStringRevers() {
+            return instance.toString();
+        }
     }
 
     public static class StackString {
@@ -82,32 +83,26 @@ public class Stack {
 
         public StackString() {
             this.instance = new ArrayList<>();
-//            System.out.println("| " + instance + "\t - Создали пустой стек");
         }
 
         public void push(String s) {
             instance.add(s);
-//            System.out.println("| " + instance + "\t <- Положили " + i + " в конец стека");
         }
 
         public String back() {
             if (instance.size() < 1) {
-//                System.out.println("| " + instance + "\t - Посмотрели значение последнего элемента в стеке: Стек пуст");
                 return null;
             }
             String s = instance.get(instance.size() - 1);
-//            System.out.println("| " + instance + "\t - Получили значение последнего элемента в стеке:" + i);
             return s;
         }
 
         public String pop() {
             if (instance.size() < 1) {
-//                System.out.println("| " + instance + "\t - Невозможно получить элемент из стека: Стек пуст");
                 return null;
             }
             String s = instance.get(instance.size() - 1);
             instance.remove(instance.size() - 1);
-//            System.out.println("| " + instance + "\t -> Забрали " + i + " из конца стека");
             return s;
         }
 

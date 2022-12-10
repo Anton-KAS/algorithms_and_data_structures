@@ -7,6 +7,19 @@ import java.util.Map;
 
 /**
  * Правильная скобочная последовательность
+ * авторское решение на python:
+ * pairs = {’)’: ’(’, ’]’: ’[’, ’}’: ’{’}
+ * s = input ()
+ * stack = []
+ * for c in s:
+ *      stack . append (c)
+ *      if len ( stack ) > 1 and c in pairs . keys () and stack [ -2] == pairs [ c ]:
+ *          stack . pop ()
+ *          stack . pop ()
+ * if len ( stack ) == 0:
+ *      print (’yes ’)
+ * else :
+ *      print (’no ’)
  * @author Anton Komrachkov
  * @since (10.12.2022)
  */
