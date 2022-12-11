@@ -23,18 +23,14 @@ public class Counting {
         public static void sort(int[] numbers) {
             int min = Arrays.stream(numbers).min().orElse(0);
             int max = Arrays.stream(numbers).max().orElse(0);
-            int size = (max - min) + 1;
-            int[] counts = new int[size];
+            int[] counts = new int[(max - min) + 1];
             for (int i : numbers) {
-                int iShift = i - min;
-                counts[iShift] += 1;
+                counts[i - min] += 1;
             }
             System.out.println("Массив подсчета: " + Arrays.toString(counts));
             int addIndex = 0;
             for (int i = 0; i < counts.length; i++) {
-                int count = counts[i];
-                if (count == 0) continue;
-                for (int j = 0; j < count; j++) {
+                for (int j = 0; j < counts[i]; j++) {
                     numbers[addIndex] = i + min;
                     addIndex++;
                 }
