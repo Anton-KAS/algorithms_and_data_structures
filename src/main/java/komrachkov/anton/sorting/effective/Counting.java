@@ -27,7 +27,7 @@ public class Counting {
             int[] counts = new int[size];
             for (int i : numbers) {
                 int iShift = i - min;
-                counts[iShift] = counts[iShift] + 1;
+                counts[iShift] += 1;
             }
             System.out.println("Массив подсчета: " + Arrays.toString(counts));
             int addIndex = 0;
