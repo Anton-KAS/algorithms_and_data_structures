@@ -1,4 +1,4 @@
-package komrachkov.anton.sorting.effective;
+package kas.anton.sorting.effective;
 
 import java.util.Arrays;
 

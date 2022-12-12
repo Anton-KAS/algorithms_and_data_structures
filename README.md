@@ -36,7 +36,7 @@
 ```
 [5,6,2,3] -> [2,6,5,3] -> [2,3,5,6] -> [2,3,5,6] -> [2,3,5,6]
 ```
-* Пример исполнения (Java): [sorting.quadratic.Selection](src/main/java/komrachkov/anton/sorting/quadratic/Selection.java)
+* Пример исполнения (Java): [sorting.quadratic.Selection](src/main/java/kas/anton/sorting/quadratic/Selection.java)
 ```
 Пример исполнения (Python):
 n = int ( input () )
@@ -62,7 +62,7 @@ print (’ ’. join ( map (str , a)) )
 ```
 [5,3,6,2] -> [3,5,6,2] -> [3,5,2,6] -> [3,2,5,6] -> [2,3,5,6]
 ```
-* Пример исполнения (Java): [sorting.quadratic.Insertion](src/main/java/komrachkov/anton/sorting/quadratic/Insertion.java)
+* Пример исполнения (Java): [sorting.quadratic.Insertion](src/main/java/kas/anton/sorting/quadratic/Insertion.java)
 ```
 Пример исполнения (Python):
 n = int ( input () )
@@ -86,7 +86,7 @@ print (’ ’. join ( map (str , a)) )
 проход 2: [3,5,2,6] -> [3,2,5,6]
 проход 3: [3,2,5,6] -> [2,3,5,6]
 ```
-* Пример исполнения (Java): [sorting.quadratic.Bubble](src/main/java/komrachkov/anton/sorting/quadratic/Bubble.java)
+* Пример исполнения (Java): [sorting.quadratic.Bubble](src/main/java/kas/anton/sorting/quadratic/Bubble.java)
 ```
 Пример исполнения (Python):
 n = int ( input () )
@@ -109,7 +109,7 @@ print (’ ’. join ( map (str , a)) )
 * На каждом "уровне" делаем _O(n)_ операций
 * Уровней рекурсии ⌈_log<sub>2</sub>n_⌉ , потому что каждый раз делим пополам
 * Итого: _O(n log(n))_
-* Пример исполнения (Java): [sorting.effective.Merge](src/main/java/komrachkov/anton/sorting/effective/Merge.java)
+* Пример исполнения (Java): [sorting.effective.Merge](src/main/java/kas/anton/sorting/effective/Merge.java)
 ```
 Пример исполнения (Python):
 def merge_sort (a , l , r) :
@@ -153,7 +153,7 @@ print (’ ’. join ( map (str , x)) )
 * Пройдем по _cnt_ и перезапишем _a_
 * Асимптотика _O(n+C)_
 * Можно использовать, когда _max-min_ мало
-* Пример исполнения (Java): [sorting.effective.Counting](src/main/java/komrachkov/anton/sorting/effective/Counting.java)
+* Пример исполнения (Java): [sorting.effective.Counting](src/main/java/kas/anton/sorting/effective/Counting.java)
 ```
 Пример исполнения (Python):
 n = int ( input () )
@@ -252,7 +252,7 @@ C = 2
 | 1, 2  <-> FILO Добавление в конец, удаление с конца
 -------
 ```
-* Пример исполнения (Java): [data_structure.linear.Stack](src/main/java/komrachkov/anton/data_structure/linear/Stack.java)
+* Пример исполнения (Java): [data_structure.linear.Stack](src/main/java/kas/anton/data_structure/linear/Stack.java)
 ```
 Пример исполнения (Python):
 x = []
@@ -281,7 +281,7 @@ while c != ’exit ’:
     c = input ()
 print (’bye ’)
 ```
-* Пример использования (Java): [Правильная скобочная последовательность](src/main/java/komrachkov/anton/tasks/t001_bracket_sequence.java)
+* Пример использования (Java): [Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
 
 #### Очередь
 * Добавить элемент в конец очереди
@@ -295,7 +295,7 @@ print (’bye ’)
   * При удалении удаляем из левого
   * Если в левом пусто, перекладываем туда по одному все элементы из правого. Они развернутся.
   * Каждый элемент переложится только 1 раз -> асимптотика _O(n)_
-* Пример исполнения (Java): [data_structure.linear.Queue](src/main/java/komrachkov/anton/data_structure/linear/Queue.java)
+* Пример исполнения (Java): [data_structure.linear.Queue](src/main/java/kas/anton/data_structure/linear/Queue.java)
 ```
 Пример исполнения (Python):
   b , f = [] , []
@@ -327,7 +327,16 @@ print (’bye ’)
  ```
 
 ## Задачи
-#### 1. [Правильная скобочная последовательность](src/main/java/komrachkov/anton/tasks/t001_bracket_sequence.java)
+### Лекции Тинькофф Образование Алгоритмы и структуры данных
+#### 1. [Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
+
+### Тинькофф. Вечный контекст
+* [1. Cуммарные расходы на интернет](src/main/java/kas/anton/tasks/eternal_contest/T01.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T01Test.java)
+* [2. Разрезать рулет на N равных частей](src/main/java/kas/anton/tasks/eternal_contest/T02.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T02Test.java)
+* [3. Минимальное количество лестничных пролетов](src/main/java/kas/anton/tasks/eternal_contest/T03.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T03Test.java)
+* [4. Числа на бумажке](src/main/java/kas/anton/tasks/eternal_contest/T04.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T04Test.java)
+* [5. Число различных тестов](src/main/java/kas/anton/tasks/eternal_contest/T05.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T05Test.java)
 
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
+* [VK Тинькофф Образование](https://vk.com/board123851409)

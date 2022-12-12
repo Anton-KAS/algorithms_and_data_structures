@@ -1,6 +1,6 @@
-package komrachkov.anton.tasks;
+package kas.anton.tasks;
 
-import komrachkov.anton.data_structure.linear.Stack;
+import kas.anton.data_structure.linear.Stack;
 
 import java.util.HashMap;
 import java.util.Map;

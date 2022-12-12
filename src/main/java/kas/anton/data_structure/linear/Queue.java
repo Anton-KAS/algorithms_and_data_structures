@@ -1,4 +1,4 @@
-package komrachkov.anton.data_structure.linear;
+package kas.anton.data_structure.linear;
 
 /**
  * Очередь. FIFO - первый пришел, первый ушел

@@ -1,4 +1,4 @@
-package komrachkov.anton.sorting.quadratic;
+package kas.anton.sorting.quadratic;
 
 import java.util.Arrays;
 

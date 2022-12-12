@@ -1,4 +1,4 @@
-package komrachkov.anton.sorting.effective;
+package kas.anton.sorting.effective;
 
 import java.util.Arrays;
 
@@ -23,7 +23,8 @@ public class Counting {
         public static void sort(int[] numbers) {
             int min = Arrays.stream(numbers).min().orElse(0);
             int max = Arrays.stream(numbers).max().orElse(0);
-            int[] counts = new int[(max - min) + 1];
+            int size = (max - min) + 1;
+            int[] counts = new int[size];
             for (int i : numbers) {
                 counts[i - min] += 1;
             }
