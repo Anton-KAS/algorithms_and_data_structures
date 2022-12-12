@@ -328,7 +328,7 @@ print (’bye ’)
 
 ## Задачи
 ### Лекции Тинькофф Образование Алгоритмы и структуры данных
-#### 1. [Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
+* [Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
 
 ### Тинькофф. Вечный контекст
 * [1. Cуммарные расходы на интернет](src/main/java/kas/anton/tasks/eternal_contest/T01.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T01Test.java)
@@ -336,6 +336,7 @@ print (’bye ’)
 * [3. Минимальное количество лестничных пролетов](src/main/java/kas/anton/tasks/eternal_contest/T03.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T03Test.java)
 * [4. Числа на бумажке](src/main/java/kas/anton/tasks/eternal_contest/T04.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T04Test.java)
 * [5. Число различных тестов](src/main/java/kas/anton/tasks/eternal_contest/T05.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T05Test.java)
+* [6. Четные и нечетные](src/main/java/kas/anton/tasks/eternal_contest/T06.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T06Test.java)
 
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
