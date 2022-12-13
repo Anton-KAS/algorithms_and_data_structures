@@ -15,7 +15,7 @@ import java.io.PrintStream;
 import java.util.stream.Stream;
 
 /**
- * {@link T10}
+ * {@link T08}
  * @author Anton Komrachkov
  * @since (11.12.2022)
  */
@@ -23,12 +23,12 @@ import java.util.stream.Stream;
 /*
 Шаблон для тестов
 Пример 1
-Ввод: 4\n0 0\n0 2\n2 2\n2 0
-Вывод: 1.000000000
+Ввод: 10 5\n3.0 2.5 1.0 2.5 1.0 1.5 3.0 1.5
+Вывод: 2.5000 2.0833
  */
 
-@DisplayName("Вечный контекст. Задача ---")
-public class T10Test {
+@DisplayName("Вечный контекст. Задача 8")
+public class T08Test {
     private final InputStream stdin = System.in;
     private final PrintStream stdOut = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
@@ -43,7 +43,7 @@ public class T10Test {
     public void testMain(String givenData, String expected) {
         //when
         System.setIn(new ByteArrayInputStream(givenData.getBytes()));
-        T10.main(null);
+        T08.main(null);
 
         //then
         Assertions.assertEquals(expected + "\n", outputStreamCaptor.toString());
@@ -51,7 +51,7 @@ public class T10Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("4\n0 0\n0 2\n2 2\n2 0", "1.000000000")
+                Arguments.of("10 5\n3.0 2.5 1.0 2.5 1.0 1.5 3.0 1.5", "2.5000 2.0833")
         );
     }
 
