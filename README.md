@@ -338,6 +338,7 @@ print (’bye ’)
 * [5. Число различных тестов](src/main/java/kas/anton/tasks/eternal_contest/T05.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T05Test.java)
 * [6. Четные и нечетные](src/main/java/kas/anton/tasks/eternal_contest/T06.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T06Test.java)
 * [7. Тайный санта](src/main/java/kas/anton/tasks/eternal_contest/T07.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T07Test.java)
+* [9. Минимизировать стоимость обедов](src/main/java/kas/anton/tasks/eternal_contest/T09.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T09Test.java)
 
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
