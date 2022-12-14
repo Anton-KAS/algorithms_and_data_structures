@@ -18,7 +18,7 @@ a !≡ (mod p), то a^(-1)a = a^(p-2).
 Помогите ему с этим.
 
 Формат входных данных
-Вводится три числа l,r,p (1 ≤ l ≤ r < p, r − l ≤ 2 × 10^7, p ≤ 10^9, p − простое число)
+Вводится три числа l, r, p (1 ≤ l ≤ r < p, r − l ≤ 2 × 10^7, p ≤ 10^9, p − простое число)
 
 Формат выходных данных
 Выведите одно число — искомую сумму.
@@ -37,16 +37,19 @@ a !≡ (mod p), то a^(-1)a = a^(p-2).
 Ввод: 1 5 7
 Вывод: 1
 
-Пример 1
+Пример 2
 Ввод: 3 10 31
 Вывод: 4
  */
 
 public class T11 {
     public static void main(String[] args) {
+        long l, r, p;
         try (Scanner scanner = new Scanner(System.in)) {
-            String string = scanner.nextLine();
-            System.out.println("TEST");
+            l = scanner.nextLong(); // 1 ≤ l ≤ r < p
+            r = scanner.nextLong(); // r − l ≤ 2 × 10^7
+            p = scanner.nextLong(); // p ≤ 10^9, p − простое число
         }
+        System.out.println("TEST");
     }
 }
