@@ -327,8 +327,11 @@ print (’bye ’)
  ```
 
 ## Задачи
+<br>🟢 - Задача решена и оттестирована
+<br>🟡 - Задача частично решена, проходит не все тесты
+<br>🔴 - Задача не решена, либо решена неверно
 ### Лекции Тинькофф Образование Алгоритмы и структуры данных
-* [Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
+* [🟢 Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
 
 ### Тинькофф. Вечный контекст
 * [🟢 1. Cуммарные расходы на интернет](src/main/java/kas/anton/tasks/eternal_contest/T01.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T01Test.java)
@@ -340,7 +343,7 @@ print (’bye ’)
 * [🟡 7. Тайный санта](src/main/java/kas/anton/tasks/eternal_contest/T07.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T07Test.java)
 * [🔴 8. План переговорки, поиск точки совпадения](src/main/java/kas/anton/tasks/eternal_contest/T08.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T08Test.java)
 * [🟡 9. Минимизировать стоимость обедов](src/main/java/kas/anton/tasks/eternal_contest/T09.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T09Test.java)
-* [🔴 10. Разделение многоугольника пополам](src/main/java/kas/anton/tasks/eternal_contest/T10.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T10Test.java)
+* [🟢 10. Разделение многоугольника пополам](src/main/java/kas/anton/tasks/eternal_contest/T10.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T10Test.java)
 
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
