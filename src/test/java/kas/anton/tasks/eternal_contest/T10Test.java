@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static kas.anton.tasks.eternal_contest.T10.scale;
+import static kas.anton.tasks.eternal_contest.T10.SCALE;
 
 /**
  * {@link T10}
@@ -80,31 +80,12 @@ public class T10Test {
 
     protected static Stream<Arguments> sourceSqr() {
         return Stream.of(
-                Arguments.of(getTops(2, 1, 4, 5, 7, 8), new BigDecimal(3).setScale(scale, RoundingMode.HALF_UP)),
-                Arguments.of(getTops(0, 0, 0, 2, 2, 2, 2, 0), new BigDecimal(4).setScale(scale, RoundingMode.HALF_UP)),
-                Arguments.of(getTops(-2, -2, -2, 2, 2, 2, 2, -2), new BigDecimal(16).setScale(scale, RoundingMode.HALF_UP)),
-                Arguments.of(getTops(3, 4, 5, 11, 12, 8, 9, 5, 5, 6), new BigDecimal(30).setScale(scale, RoundingMode.HALF_UP))
+                Arguments.of(getTops(2, 1, 4, 5, 7, 8), new BigDecimal(3).setScale(SCALE, RoundingMode.HALF_UP)),
+                Arguments.of(getTops(0, 0, 0, 2, 2, 2, 2, 0), new BigDecimal(4).setScale(SCALE, RoundingMode.HALF_UP)),
+                Arguments.of(getTops(-2, -2, -2, 2, 2, 2, 2, -2), new BigDecimal(16).setScale(SCALE, RoundingMode.HALF_UP)),
+                Arguments.of(getTops(3, 4, 5, 11, 12, 8, 9, 5, 5, 6), new BigDecimal(30).setScale(SCALE, RoundingMode.HALF_UP))
         );
     }
-
-//    @ParameterizedTest
-//    @MethodSource("sourceFindCentre")
-//    public void testFindCentre(List<BigDecimal[]> givenData, BigDecimal expected) {
-//        //when
-//        BigDecimal result = T10.findCenter(givenData);
-//
-//        //then
-//        Assertions.assertEquals(expected, result);
-//    }
-//
-//    protected static Stream<Arguments> sourceFindCentre() {
-//        return Stream.of(
-//                Arguments.of(getTops(2, 1, 4, 5, 7, 8), (new BigDecimal(7).subtract(new BigDecimal(2)).setScale(scale, RoundingMode.HALF_UP).divide(new BigDecimal(2), RoundingMode.HALF_UP))),
-//                Arguments.of(getTops(0, 0, 0, 2, 2, 2, 2, 0), (new BigDecimal(2).subtract(new BigDecimal(0)).setScale(scale, RoundingMode.HALF_UP).divide(new BigDecimal(2), RoundingMode.HALF_UP))),
-//                Arguments.of(getTops(-2, -2, -2, 2, 2, 2, 2, -2), (new BigDecimal(2).subtract(new BigDecimal(-2)).setScale(scale, RoundingMode.HALF_UP).divide(new BigDecimal(2), RoundingMode.HALF_UP))),
-//                Arguments.of(getTops(3, 4, 5, 11, 12, 8, 9, 5, 5, 6), (new BigDecimal(12).subtract(new BigDecimal(3)).setScale(scale, RoundingMode.HALF_UP).divide(new BigDecimal(2), RoundingMode.HALF_UP)))
-//        );
-//    }
 
     private static List<BigDecimal[]> getTops(int...xys) {
         List<BigDecimal[]> tops = new ArrayList<>();

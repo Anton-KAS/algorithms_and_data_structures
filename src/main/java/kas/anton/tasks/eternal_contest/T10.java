@@ -40,89 +40,81 @@ import java.util.stream.Collectors;
  */
 
 public class T10 {
-    private static final BigDecimal accuracy = new BigDecimal(0.000001);
-    public static int scale = 10;
+    private final static BigDecimal ACCURACY = new BigDecimal("0.000001");
+    public final static int SCALE = 10;
+    public final static int FINAL_SCALE = 7;
+    private final static int X = 0;
+    private final static int Y = 1;
 
 
     public static void main(String[] args) {
         int n; // количество вершин многоугольника (1 ≤ n ≤ 1000)
+        List<BigDecimal[]> tops = new ArrayList<>(); // координаты — целые числа, не превосходящие по модулю 10^3
         BigDecimal xMin = null;
         BigDecimal xMax = null;
-        List<BigDecimal[]> tops = new ArrayList<>(); // координаты — целые числа, не превосходящие по модулю 10^3
         try (Scanner scanner = new Scanner(System.in)) {
             n = scanner.nextInt();
             for (int i = 0; i < n; i++) {
                 BigDecimal[] xy = new BigDecimal[2];
-                xy[0] = new BigDecimal(scanner.nextInt()).setScale(scale, RoundingMode.HALF_UP);
-                xy[1] = new BigDecimal(scanner.nextInt()).setScale(scale, RoundingMode.HALF_UP);
+                xy[X] = new BigDecimal(scanner.nextInt()).setScale(SCALE, RoundingMode.HALF_UP);
+                xy[Y] = new BigDecimal(scanner.nextInt()).setScale(SCALE, RoundingMode.HALF_UP);
                 tops.add(xy);
-                if (xMin == null) xMin = xy[0];
-                if (xMax == null) xMax = xy[0];
-                xMin = xMin.min(xy[0]);
-                xMax = xMax.max(xy[0]);
+                if (xMin == null) xMin = xy[X];
+                if (xMax == null) xMax = xy[X];
+                xMin = xMin.min(xy[X]);
+                xMax = xMax.max(xy[X]);
             }
         }
         BigDecimal xCentre;
         while (true) {
+            assert xMax != null;
             xCentre = findCenter(xMin, xMax);
-            BigDecimal xUsed = new BigDecimal(xCentre.toString()).setScale(scale, RoundingMode.HALF_UP);
-            List<BigDecimal[]> newTops = pushTop(tops, xCentre);
+            BigDecimal xUsed = new BigDecimal(xCentre.toString());
+            List<BigDecimal[]> newTops = getNewTops(tops, xCentre);
             List<BigDecimal[]> leftTops = newTops.stream().filter(t -> t[0].compareTo(xUsed) <= 0).collect(Collectors.toList());
             List<BigDecimal[]> rightTops = newTops.stream().filter(t -> t[0].compareTo(xUsed) >= 0).collect(Collectors.toList());
 
             BigDecimal leftSqr = getSquare(leftTops);
             BigDecimal rightSqr = getSquare(rightTops);
             BigDecimal deltaSqr = leftSqr.subtract(rightSqr);
-            if (deltaSqr.abs().compareTo(accuracy) <= 0) break;
-            if (deltaSqr.compareTo(new BigDecimal(0)) > 0) {
-                xMax = xCentre;
-            } else {
-                xMin = xCentre;
-            }
+
+            if (deltaSqr.abs().compareTo(ACCURACY) <= 0) break;
+
+            if (deltaSqr.compareTo(new BigDecimal(0)) > 0) xMax = xCentre;
+            else xMin = xCentre;
         }
-        System.out.println(xCentre.setScale(7, RoundingMode.HALF_UP).toPlainString());
+        System.out.println(xCentre.setScale(FINAL_SCALE, RoundingMode.HALF_UP).toPlainString());
     }
 
     public static BigDecimal getSquare(List<BigDecimal[]> tops) {
-        int x = 0;
-        int y = 1;
-        BigDecimal result = new BigDecimal(0).setScale(scale, RoundingMode.HALF_UP);
+        BigDecimal result = new BigDecimal(0).setScale(SCALE, RoundingMode.HALF_UP);
         for (int i = 0; i < tops.size(); i++) {
-            int j = i + 1;
-            if (j >= tops.size()) j = 0;
-            BigDecimal XiYj = tops.get(i)[x].multiply(tops.get(j)[y]);
-            BigDecimal XjYi = tops.get(i)[y].multiply(tops.get(j)[x]);
+            int j = (i + 1) >= tops.size() ? 0 : i + 1;
+            BigDecimal XiYj = tops.get(i)[X].multiply(tops.get(j)[Y]);
+            BigDecimal XjYi = tops.get(i)[Y].multiply(tops.get(j)[X]);
             result = result.add(XiYj).subtract(XjYi);
         }
-        result = result.abs();
-        return result.divide(new BigDecimal(2), RoundingMode.HALF_UP);
+        return result.abs().divide(new BigDecimal(2), RoundingMode.HALF_UP);
     }
 
     public static BigDecimal getY(BigDecimal m, BigDecimal[] t1, BigDecimal[] t2) {
-        int x = 0;
-        int y = 1;
-        return (m.subtract(t2[x])).multiply(t2[y].subtract(t1[y])).divide(t2[x].subtract(t1[x]), RoundingMode.HALF_UP).add(t2[y]);
+        return (m.subtract(t2[X])).multiply(t2[Y].subtract(t1[Y])).divide(t2[X].subtract(t1[X]), RoundingMode.HALF_UP).add(t2[Y]);
     }
 
     public static BigDecimal findCenter(BigDecimal xMin, BigDecimal xMax) {
-        BigDecimal xDelta = xMax.subtract(xMin);
-        BigDecimal xCentre = xDelta.divide(new BigDecimal(2), RoundingMode.HALF_UP).add(xMin);
-        return xCentre;
+        return xMax.subtract(xMin).divide(new BigDecimal(2), RoundingMode.HALF_UP).add(xMin);
     }
 
-    public static List<BigDecimal[]> pushTop(List<BigDecimal[]> tops, BigDecimal xCentre) {
-        int x = 0;
+    public static List<BigDecimal[]> getNewTops(List<BigDecimal[]> tops, BigDecimal xCentre) {
         List<BigDecimal[]> newTops = new ArrayList<>();
         for (int i = 0; i < tops.size(); i++) {
-            int j = i + 1;
-            if (j >= tops.size()) j = 0;
+            int j = (i + 1) >= tops.size() ? 0 : i + 1;
             newTops.add(tops.get(i));
-            if ((tops.get(i)[x].compareTo(xCentre) < 0 && tops.get(j)[x].compareTo(xCentre) > 0) ||
-                    (tops.get(i)[x].compareTo(xCentre) > 0 && tops.get(j)[x].compareTo(xCentre) < 0)) {
-                BigDecimal yCentre = getY(xCentre, tops.get(i), tops.get(j));
+            if ((tops.get(i)[X].compareTo(xCentre) < 0 && tops.get(j)[X].compareTo(xCentre) > 0) ||
+                    (tops.get(i)[X].compareTo(xCentre) > 0 && tops.get(j)[X].compareTo(xCentre) < 0)) {
                 BigDecimal[] nexXY = new BigDecimal[2];
-                nexXY[0] = xCentre;
-                nexXY[1] = yCentre;
+                nexXY[X] = xCentre;
+                nexXY[Y] = getY(xCentre, tops.get(i), tops.get(j));
                 newTops.add(nexXY);
             }
         }
