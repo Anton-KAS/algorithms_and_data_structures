@@ -15,19 +15,25 @@ import java.io.PrintStream;
 import java.util.stream.Stream;
 
 /**
- * {@link T01}
+ * {@link T02}
  * @author Anton Komrachkov
  * @since (16.12.2022)
  */
 
 /*
 Пример 1
-Ввод: 6 6 8 8\n1 8 4 9
-Вывод: 49
+Ввод:
+5
+MICHAIL VLADISLAV GRIGORY
+VLADISLAV MICHAIL GRIGORY
+IVAN ILYA VLADIMIR
+ANDREY VLADIMIR ILYA
+VLADIMIR IVAN ANDREY
+Вывод: 2
  */
 
-@DisplayName("Стажировка осень 2022. Задача 1")
-public class T01Test {
+@DisplayName("Стажировка осень 2022. Задача 2")
+public class T02Test {
     private final InputStream stdin = System.in;
     private final PrintStream stdOut = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
@@ -42,7 +48,7 @@ public class T01Test {
     public void testMain(String givenData, String expected) {
         //when
         System.setIn(new ByteArrayInputStream(givenData.getBytes()));
-        T01.main(null);
+        T02.main(null);
 
         //then
         Assertions.assertEquals(expected + "\n", outputStreamCaptor.toString());
@@ -50,7 +56,20 @@ public class T01Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("6 6 8 8\n1 8 4 9", "49")
+                Arguments.of("5\n" +
+                        "MICHAIL VLADISLAV GRIGORY\n" +
+                        "VLADISLAV MICHAIL GRIGORY\n" +
+                        "IVAN ILYA VLADIMIR\n" +
+                        "ANDREY VLADIMIR ILYA\n" +
+                        "VLADIMIR IVAN ANDREY", "2"),
+                Arguments.of("5\n" +
+                        "MICHAIL VLADISLAV GRIGORY\n" +
+                        "VLADISLAV MICHAIL GRIGORY\n" +
+                        "IVAN ILYA VLADIMIR\n" +
+                        "ILYA IVAN VLADIMIR\n" +
+                        "VLADIMIR IVAN ILYA\n" +
+                        "ANDREY VLADIMIR ILYA\n" +
+                        "VLADIMIR IVAN ANDREY", "3")
         );
     }
 
