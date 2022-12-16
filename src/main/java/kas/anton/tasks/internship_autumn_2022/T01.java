@@ -9,18 +9,22 @@ import java.util.Scanner;
  */
 
 /*
-
+Условие задачи в doc/T01.png
  */
 
 public class T01 {
     public static void main(String[] args) {
-        int[] xy1 = new int[4];
-        int[] xy2 = new int[4];
+        int[] x = new int[4];
+        int[] y = new int[4];
         try (Scanner scanner = new Scanner(System.in)) {
-            xy1 = Arrays.stream(scanner.nextLine().trim().split(" ")).mapToInt(Integer::parseInt).toArray();
-            xy2 = Arrays.stream(scanner.nextLine().trim().split(" ")).mapToInt(Integer::parseInt).toArray();
+            for (int i = 0; i < 4; i++) {
+                x[i] = scanner.nextInt();
+                y[i] = scanner.nextInt();
+            }
         }
-        int result = 0;
-        System.out.println(result);
+        int deltaX = Arrays.stream(x).max().orElse(0) - Arrays.stream(x).min().orElse(0);
+        int deltaY = Arrays.stream(y).max().orElse(0) - Arrays.stream(y).min().orElse(0);
+        int deltaMax = Math.max(deltaX, deltaY);
+        System.out.println(deltaMax * deltaMax);
     }
 }

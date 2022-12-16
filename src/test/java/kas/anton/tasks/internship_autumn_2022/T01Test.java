@@ -17,13 +17,13 @@ import java.util.stream.Stream;
 /**
  * {@link T01}
  * @author Anton Komrachkov
- * @since (11.12.2022)
+ * @since (16.12.2022)
  */
 
 /*
 Пример 1
-Ввод: 6 6 8 8
-Вывод: 1 8 4 9
+Ввод: 6 6 8 8\n1 8 4 9
+Вывод: 49
  */
 
 @DisplayName("Стажировка осень 2022. Задача 01")
@@ -50,7 +50,7 @@ public class T01Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("6 6 8 8", "1 8 4 9")
+                Arguments.of("6 6 8 8\n1 8 4 9", "49")
         );
     }
 
