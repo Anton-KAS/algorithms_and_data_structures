@@ -55,7 +55,47 @@ public class T11Test {
     protected static Stream<Arguments> source() {
         return Stream.of(
                 Arguments.of("1 5 7", "1"),
-                Arguments.of("3 10 31", "4")
+                Arguments.of("3 10 31", "4"),
+                Arguments.of("1 1 7", "1"),
+                Arguments.of("2 2 7", "4"),
+                Arguments.of("3 3 7", "5"),
+                Arguments.of("4 4 7", "2"),
+                Arguments.of("5 5 7", "3"),
+                Arguments.of("6 6 7", "6"),
+                Arguments.of("7 7 8", "1"),
+                Arguments.of("123 4567 56789", "294"),
+                Arguments.of("1000000 20000000 1000000000", "723500000"),
+                Arguments.of("1 20000000 1000000000", "130000000")
+        );
+    }
+
+    @ParameterizedTest
+    @MethodSource("sourceBinPower")
+    public void testBinPowerRec(int x, int power, int mod, long expected) {
+        //when
+        long result = T11.binPowRec(x, power, mod);
+
+        //then
+        Assertions.assertEquals(expected, result);
+    }
+
+    @ParameterizedTest
+    @MethodSource("sourceBinPower")
+    public void testBinPower(int x, int power, int mod, long expected) {
+        //when
+        long result = T11.binPowerIter(x, power, mod);
+
+        //then
+        Assertions.assertEquals(expected, result);
+    }
+
+    protected static Stream<Arguments> sourceBinPower() {
+        return Stream.of(
+                Arguments.of(2, 2, 3, 1),
+                Arguments.of(2, 3, 3, 2),
+                Arguments.of(342, 34234223, 700, 188),
+                Arguments.of(20000000, 1000000000 - 2, 1000000000, 0),
+                Arguments.of(20000000 - 1, 1000000000 - 2, 1000000000, 40000001)
         );
     }
 

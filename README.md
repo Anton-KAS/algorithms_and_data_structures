@@ -344,8 +344,8 @@ print (’bye ’)
 * [🔴 8. План переговорки, поиск точки совпадения](src/main/java/kas/anton/tasks/eternal_contest/T08.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T08Test.java)
 * [🟡 9. Минимизировать стоимость обедов](src/main/java/kas/anton/tasks/eternal_contest/T09.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T09Test.java)
 * [🟢 10. Разделение многоугольника пополам](src/main/java/kas/anton/tasks/eternal_contest/T10.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T10Test.java)
-* [🔴 11. Малая теорема ферма](src/main/java/kas/anton/tasks/eternal_contest/T11.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T11Test.java)
-* [🔴 12. Количество сумм монет в кошельке](src/main/java/kas/anton/tasks/eternal_contest/T12.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T12Test.java)
+* [🟡 11. Малая теорема Ферма](src/main/java/kas/anton/tasks/eternal_contest/T11.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T11Test.java)
+* [🟡 12. Количество сумм монет в кошельке](src/main/java/kas/anton/tasks/eternal_contest/T12.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T12Test.java)
 
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
