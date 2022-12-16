@@ -74,7 +74,9 @@ public class T04Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("ten=a\n" +
+                Arguments.of("thats=zero\n" +
+                                "a=10\n" +
+                                "ten=a\n" +
                                 "aboba=ten\n" +
                                 "ten=-10\n" +
                                 "{\n" +

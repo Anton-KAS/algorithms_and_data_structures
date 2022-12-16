@@ -327,14 +327,15 @@ print (’bye ’)
     c = input ()
   print (’bye ’)
  ```
-
+___
 ## Задачи
 <br>🟢 - Задача решена и оттестирована
 <br>🟡 - Задача частично решена, проходит не все тесты
 <br>🔴 - Задача не решена, либо решена неверно
+___
 ### Лекции Тинькофф Образование Алгоритмы и структуры данных
 * [🟢 Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
-
+___
 ### Тинькофф Вечный контекст
 * [🟢 1. Cуммарные расходы на интернет](src/main/java/kas/anton/tasks/eternal_contest/T01.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T01Test.java)
 * [🟢 2. Разрезать рулет на N равных частей](src/main/java/kas/anton/tasks/eternal_contest/T02.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T02Test.java)
@@ -348,18 +349,19 @@ print (’bye ’)
 * [🟢 10. Разделение многоугольника пополам](src/main/java/kas/anton/tasks/eternal_contest/T10.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T10Test.java)
 * [🟡 11. Малая теорема Ферма](src/main/java/kas/anton/tasks/eternal_contest/T11.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T11Test.java)
 * [🟡 12. Количество сумм монет в кошельке](src/main/java/kas/anton/tasks/eternal_contest/T12.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T12Test.java)
-
+___
 ### Тинькофф Стажировка осень 2022
 * [🟢 1. Перестройка. Объединение зон](src/main/java/kas/anton/tasks/internship_autumn_2022/T01.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T01.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T01Test.java)
 * [🟢 2. Победители. Поиск лучшей команды](src/main/java/kas/anton/tasks/internship_autumn_2022/T02.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T02.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T02Test.java)
 * [🟢 3. Подписки. Перестановка двух чисел](src/main/java/kas/anton/tasks/internship_autumn_2022/T03.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T03.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T03Test.java)
-* [🔴 4. Первое задание](src/main/java/kas/anton/tasks/internship_autumn_2022/T04.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T04.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T04Test.java)
+* [🟢 4. Первое задание. Переменные в блоках](src/main/java/kas/anton/tasks/internship_autumn_2022/T04.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T04.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T04Test.java)
 * [🔴 5. Префиксы](src/main/java/kas/anton/tasks/internship_autumn_2022/T05.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T05.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T05Test.java)
 * [🔴 6. Поехали](src/main/java/kas/anton/tasks/internship_autumn_2022/T06.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T06.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T06Test.java)
 * [🔴 7. Полки](src/main/java/kas/anton/tasks/internship_autumn_2022/T07.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T07.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T07Test.java)
 * [🔴 8. Покупатели](src/main/java/kas/anton/tasks/internship_autumn_2022/T08.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T08.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T08Test.java)
-#### [Разбор задач](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/task_analysis.pdf)
 
+[=> Разбор задач <=](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/task_analysis.pdf)
+___
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
 * [VK Тинькофф Образование](https://vk.com/board123851409)
