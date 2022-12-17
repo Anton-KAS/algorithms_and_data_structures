@@ -56,7 +56,12 @@ public class T01Test {
     protected static Stream<Arguments> source() {
         return Stream.of(
                 Arguments.of("3 5 1", "NO"),
-                Arguments.of("5 3 1", "YES")
+                Arguments.of("5 3 1", "YES"),
+                Arguments.of("5 3 2", "NO"),
+                Arguments.of("6 2 2", "YES"),
+                Arguments.of("1000000000 1 10", "NO"),
+                Arguments.of("999999999 1 10", "YES"),
+                Arguments.of("1000000000 2 10", "YES")
         );
     }
 
