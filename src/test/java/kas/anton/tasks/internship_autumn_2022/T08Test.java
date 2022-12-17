@@ -68,7 +68,16 @@ public class T08Test {
                                 "A R",
                         "0\n" +
                                 "1\n" +
-                                "2")
+                                "2"),
+                Arguments.of("2 3\n" +
+                                "ATSR\n" +
+                                "ASR\n" +
+                                "S R\n" +
+                                "AT R\n" +
+                                "ATS R",
+                        "0\n" +
+                                "1\n" +
+                                "1")
         );
     }
 

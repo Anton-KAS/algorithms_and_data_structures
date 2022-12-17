@@ -358,7 +358,7 @@ ___
 * [🟢 5. Префиксы. Поиск имени в списке](src/main/java/kas/anton/tasks/internship_autumn_2022/T05.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T05.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T05Test.java)
 * [🟢 6. Поехали. Лифты едут только вверх](src/main/java/kas/anton/tasks/internship_autumn_2022/T06.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T06.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T06Test.java)
 * [🟢 7. Полки](src/main/java/kas/anton/tasks/internship_autumn_2022/T07.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T07.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T07Test.java)
-* [🔴 8. Покупатели](src/main/java/kas/anton/tasks/internship_autumn_2022/T08.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T08.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T08Test.java)
+* [🟢 8. Покупатели](src/main/java/kas/anton/tasks/internship_autumn_2022/T08.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T08.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T08Test.java)
 
 [=> Разбор задач <=](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/task_analysis.pdf)
 ___
