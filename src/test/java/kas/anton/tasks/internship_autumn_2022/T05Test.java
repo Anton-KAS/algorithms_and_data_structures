@@ -74,6 +74,18 @@ public class T05Test {
                                 "1 b",
                         "4\n" +
                                 "4\n" +
+                                "5"),
+                Arguments.of("5 3\n" +
+                                "ad\n" +
+                                "a\n" +
+                                "abc\n" +
+                                "aboba\n" +
+                                "b\n" +
+                                "3 c\n" +
+                                "2 ab\n" +
+                                "1 b",
+                        "-1\n" +
+                                "4\n" +
                                 "5")
         );
     }
