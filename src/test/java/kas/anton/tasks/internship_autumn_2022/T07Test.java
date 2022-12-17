@@ -8,6 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import javax.print.DocFlavor;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -59,13 +60,52 @@ public class T07Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("3\n" +
+                Arguments.of("hello\n" +
+                                "3\n" +
                                 "1 5\n" +
                                 "1 2\n" +
                                 "2 5",
                         "9\n" +
                                 "2\n" +
-                                "3")
+                                "3"),
+                Arguments.of(getBigLine() + "\n" +
+                                "18\n" +
+                                "1 5\n" +
+                                "1 200\n" +
+                                "10 200\n" +
+                                "100 200\n" +
+                                "1 2000\n" +
+                                "10 2000\n" +
+                                "100 2000\n" +
+                                "1000 2000\n" +
+                                "1 10000\n" +
+                                "10 10000\n" +
+                                "100 10000\n" +
+                                "1000 10000\n" +
+                                "1 100000\n" +
+                                "10 100000\n" +
+                                "100 100000\n" +
+                                "1000 100000\n" +
+                                "10000 100000\n" +
+                                "2 5",
+                        "11\n" +
+                                "271\n" +
+                                "279\n" +
+                                "278\n" +
+                                "279\n" +
+                                "270\n" +
+                                "284\n" +
+                                "294\n" +
+                                "279\n" +
+                                "270\n" +
+                                "284\n" +
+                                "294\n" +
+                                "279\n" +
+                                "270\n" +
+                                "284\n" +
+                                "294\n" +
+                                "290\n" +
+                                "4")
         );
     }
 
@@ -73,5 +113,13 @@ public class T07Test {
     public void tearDown() {
         System.setOut(stdOut);
         System.setIn(stdin);
+    }
+
+    private static String getBigLine() {
+        StringBuilder stringBuilder = new StringBuilder();
+        while (stringBuilder.length() < 100000) {
+            stringBuilder.append("qwertyuiopasdfghjklzxcvbnm");
+        }
+        return stringBuilder.toString();
     }
 }

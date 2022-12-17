@@ -1,6 +1,9 @@
 package kas.anton.tasks.internship_autumn_2022;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 /**
  * @author Anton Komrachkov
@@ -29,11 +32,33 @@ import java.util.Scanner;
 
 public class T07 {
     public static void main(String[] args) {
-        int[] ai; // 1 ≤ i ≤ n, 1 ≤ ai ≤ 10^3
+        String s;
+        int q;
         try (Scanner scanner = new Scanner(System.in)) {
-            int n = scanner.nextInt();
+            s = scanner.nextLine();
+            q = Integer.parseInt(scanner.nextLine());
+            for (int i = 0; i < q; i++) {
+                int l = scanner.nextInt();
+                int r = scanner.nextInt();
+
+                String[] plan = s.substring(l - 1, r).split("");
+                String[] order = plan.clone();
+                Arrays.sort(order);
+                int count = 0;
+                int cursor = 0;
+                for (String step : order) {
+                    while (true) {
+                        if (cursor >= order.length) cursor = 0;
+                        if (plan[cursor].equals(step)) {
+                            break;
+                        }
+                        cursor++;
+                        count++;
+                    }
+                }
+                System.out.println(count);
+            }
+
         }
-        int result = 0;
-        System.out.println(result);
     }
 }
