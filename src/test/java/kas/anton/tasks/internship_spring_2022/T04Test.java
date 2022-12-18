@@ -51,7 +51,15 @@ public class T04Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("4 4", "2")
+                Arguments.of("4 4", "2"),
+                Arguments.of("3 3", "0"),
+                Arguments.of("5 5", "0"),
+                Arguments.of("8 4", "0"),
+                Arguments.of("9 4", "0"),
+                Arguments.of("7 4", "1"),
+                Arguments.of("4 7", "1"),
+                Arguments.of("49 49", "601080390"),
+                Arguments.of("50 50", "0")
         );
     }
 

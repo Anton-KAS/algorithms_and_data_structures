@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class T02 {
     public static void main(String[] args) {
-        long n, m; // // 1 ≤ n, m ≤ 10^18
+        long n, m; // 1 ≤ n, m ≤ 10^18
         try (Scanner scanner = new Scanner(System.in)) {
             n = scanner.nextLong();
             m = scanner.nextLong();
