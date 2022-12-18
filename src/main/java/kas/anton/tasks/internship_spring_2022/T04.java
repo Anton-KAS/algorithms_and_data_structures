@@ -9,7 +9,7 @@ import java.util.*;
 
 /*
 Стажировка весна 2022. Задача 4
-Полное условие задачи в doc/T01.png
+Полное условие задачи в doc/T04.png
  */
 public class T04 {
     public static void main(String[] args) {

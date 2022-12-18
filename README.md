@@ -366,7 +366,7 @@ ___
 * [🟢 2. Закрасить квадраты в прямоугольнике](src/main/java/kas/anton/tasks/internship_spring_2022/T02.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T02.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T02Test.java)
 * [🔴 3. Последовательность](src/main/java/kas/anton/tasks/internship_spring_2022/T03.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T03.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T03Test.java)
 * [🟢 4. Ход конем](src/main/java/kas/anton/tasks/internship_spring_2022/T04.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T04.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T04Test.java)
-* [🔴 5. Прыжки в гору](src/main/java/kas/anton/tasks/internship_spring_2022/T05.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T05.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T05Test.java)
+* [🟢 5. Прыжки в гору](src/main/java/kas/anton/tasks/internship_spring_2022/T05.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T05.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T05Test.java)
 ___
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)

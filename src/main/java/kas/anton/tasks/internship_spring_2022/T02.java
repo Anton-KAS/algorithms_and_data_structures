@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /*
 Стажировка весна 2022. Задача 2
-Полное условие задачи в doc/T01.png
+Полное условие задачи в doc/T02.png
  */
 public class T02 {
     public static void main(String[] args) {
