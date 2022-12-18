@@ -60,7 +60,9 @@ public class T03Test {
     protected static Stream<Arguments> source() {
         return Stream.of(
                 Arguments.of("2\n3 4", "3"),
-                Arguments.of("5\n1 1 1 1 1", "2")
+                Arguments.of("5\n1 1 1 1 1", "2"),
+                Arguments.of("5\n1 1000000000000000000 1 1 1", "1000000010"),
+                Arguments.of("5\n1 1000000000000000000 900000000000000000 800000000000000000 1", "1000000005")
         );
     }
 
