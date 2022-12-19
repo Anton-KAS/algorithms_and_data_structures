@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /*
 Стажировка весна 2019. Задача 1
-Полное условие задачи в doc/T01.png
+Полное условие задачи в doc/T01.jpeg
  */
 
 public class T01 {
