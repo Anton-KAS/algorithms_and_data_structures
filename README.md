@@ -337,18 +337,19 @@ ___
 * [🟢 Правильная скобочная последовательность](src/main/java/kas/anton/tasks/t001_bracket_sequence.java)
 ___
 ### Тинькофф Вечный контекст
-* [🟢 1. Cуммарные расходы на интернет](src/main/java/kas/anton/tasks/eternal_contest/T01.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T01Test.java)
-* [🟢 2. Разрезать рулет на N равных частей](src/main/java/kas/anton/tasks/eternal_contest/T02.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T02Test.java)
-* [🟢 3. Минимальное количество лестничных пролетов](src/main/java/kas/anton/tasks/eternal_contest/T03.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T03Test.java)
-* [🟢 4. Числа на бумажке](src/main/java/kas/anton/tasks/eternal_contest/T04.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T04Test.java)
-* [🟢 5. Число различных тестов](src/main/java/kas/anton/tasks/eternal_contest/T05.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T05Test.java)
-* [🟡 6. Четные и нечетные](src/main/java/kas/anton/tasks/eternal_contest/T06.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T06Test.java)
+* [🟢 1. Мобайл. Cуммарные расходы на интернет](src/main/java/kas/anton/tasks/eternal_contest/T01.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T01Test.java)
+* [🟢 2. Рулет. Разрезать рулет на N равных частей](src/main/java/kas/anton/tasks/eternal_contest/T02.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T02Test.java)
+* [🟢 3. Лифты и переговорки. Минимальное количество лестничных пролетов](src/main/java/kas/anton/tasks/eternal_contest/T03.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T03Test.java)
+* [🟢 4. Бумажка с числами](src/main/java/kas/anton/tasks/eternal_contest/T04.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T04Test.java)
+* [🟢 5. Тестирование. Число различных тестов](src/main/java/kas/anton/tasks/eternal_contest/T05.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T05Test.java)
+* [🟡 6. Физкультуа. Четные и нечетные](src/main/java/kas/anton/tasks/eternal_contest/T06.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T06Test.java)
 * [🟡 7. Тайный санта](src/main/java/kas/anton/tasks/eternal_contest/T07.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T07Test.java)
-* [🔴 8. План переговорки, поиск точки совпадения](src/main/java/kas/anton/tasks/eternal_contest/T08.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T08Test.java)
-* [🟡 9. Минимизировать стоимость обедов](src/main/java/kas/anton/tasks/eternal_contest/T09.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T09Test.java)
-* [🟢 10. Разделение многоугольника пополам](src/main/java/kas/anton/tasks/eternal_contest/T10.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T10Test.java)
-* [🟡 11. Малая теорема Ферма](src/main/java/kas/anton/tasks/eternal_contest/T11.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T11Test.java)
-* [🟡 12. Количество сумм монет в кошельке](src/main/java/kas/anton/tasks/eternal_contest/T12.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T12Test.java)
+* [🔴 8. Переговорка. Поиск точки совпадения](src/main/java/kas/anton/tasks/eternal_contest/T08.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T08Test.java)
+* [🟡 9. Фудкорт. Минимизировать стоимость обедов](src/main/java/kas/anton/tasks/eternal_contest/T09.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T09Test.java)
+* [🟢 10. Торт. Разделение многоугольника пополам](src/main/java/kas/anton/tasks/eternal_contest/T10.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T10Test.java)
+* [🟡 11. Математическая задачаю. Малая теорема Ферма](src/main/java/kas/anton/tasks/eternal_contest/T11.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T11Test.java)
+* [🟡 12. Три монеты. Количество сумм монет в кошельке](src/main/java/kas/anton/tasks/eternal_contest/T12.java) / [TEST](src/test/java/kas/anton/tasks/eternal_contest/T12Test.java)
+* <br>[=> Разбор задач <=](src/main/java/kas/anton/tasks/eternal_contest/doc/task_analysis.pdf)
 ___
 ### Тинькофф Стажировка осень 2022
 * [🟢 1. Перестройка. Объединение зон](src/main/java/kas/anton/tasks/internship_autumn_2022/T01.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2022/doc/T01.png) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2022/T01Test.java)
@@ -367,7 +368,24 @@ ___
 * [🟢 3. Последовательность](src/main/java/kas/anton/tasks/internship_spring_2022/T03.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T03.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T03Test.java)
 * [🟢 4. Ход конем](src/main/java/kas/anton/tasks/internship_spring_2022/T04.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T04.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T04Test.java)
 * [🟢 5. Прыжки в гору](src/main/java/kas/anton/tasks/internship_spring_2022/T05.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2022/doc/T05.png) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2022/T05Test.java)
+  <br>[=> Разбор задач <=](src/main/java/kas/anton/tasks/internship_spring_2022/doc/task_analysis.pdf)
 ___
+### Тинькофф Стажировка весна 2021
+* [🔴 1. ](src/main/java/kas/anton/tasks/internship_autumn_2021/T01.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2021/doc/T01.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2021/T01Test.java)
+* [🔴 2. ](src/main/java/kas/anton/tasks/internship_autumn_2021/T02.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2021/doc/T02.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2021/T02Test.java)
+* [🔴 3. ](src/main/java/kas/anton/tasks/internship_autumn_2021/T03.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2021/doc/T03.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2021/T03Test.java)
+* [🔴 4. ](src/main/java/kas/anton/tasks/internship_autumn_2021/T04.java) / [Условие](src/main/java/kas/anton/tasks/internship_autumn_2021/doc/T04.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_autumn_2021/T04Test.java)
+___
+### Тинькофф Стажировка весна 2019
+* [🔴 1. ](src/main/java/kas/anton/tasks/internship_spring_2019/T01.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T01.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T01Test.java)
+* [🔴 2. ](src/main/java/kas/anton/tasks/internship_spring_2019/T02.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T02.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T02Test.java)
+* [🔴 3. ](src/main/java/kas/anton/tasks/internship_spring_2019/T03.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T03.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T03Test.java)
+* [🔴 4. ](src/main/java/kas/anton/tasks/internship_spring_2019/T04.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T04.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T04Test.java)
+* [🔴 5. ](src/main/java/kas/anton/tasks/internship_spring_2019/T05.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T05.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T05Test.java)
+* [🔴 6. ](src/main/java/kas/anton/tasks/internship_spring_2019/T06.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T06.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T06Test.java)
+* [🔴 7. ](src/main/java/kas/anton/tasks/internship_spring_2019/T07.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T07.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T07Test.java)
+* [🔴 8. ](src/main/java/kas/anton/tasks/internship_spring_2019/T08.java) / [Условие](src/main/java/kas/anton/tasks/internship_spring_2019/doc/T08.jpeg) / [TEST](src/test/java/kas/anton/tasks/internship_spring_2019/T08Test.java)
+---
 ## Источники
 * [Тинькофф Образование](https://edu.tinkoff.ru/)
 * [VK Тинькофф Образование](https://vk.com/board123851409)

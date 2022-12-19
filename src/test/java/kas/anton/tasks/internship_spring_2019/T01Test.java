@@ -1,4 +1,4 @@
-package kas.anton.tasks.internship_autumn_2022;
+package kas.anton.tasks.internship_spring_2019;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 /**
  * {@link T01}
  * @author Anton Komrachkov
- * @since (16.12.2022)
+ * @since (19.12.2022)
  */
 
 /*
@@ -26,7 +26,7 @@ import java.util.stream.Stream;
 Вывод: 49
  */
 
-@DisplayName("Стажировка осень 2022. Задача 1")
+@DisplayName("Стажировка весна 2019. Задача 1")
 public class T01Test {
     private final InputStream stdin = System.in;
     private final PrintStream stdOut = System.out;
@@ -50,7 +50,7 @@ public class T01Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("Gde   moy   keshback  ? ", "Gde moy keshback ?")
+                Arguments.of("6 6 8 8\n1 8 4 9", "49")
         );
     }
 
