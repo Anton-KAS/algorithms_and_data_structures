@@ -50,7 +50,7 @@ public class T01Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("Gde   moy   keshback  ? ", "Gde moy keshback ?")
+                Arguments.of("6 6 8 8\n1 8 4 9", "49")
         );
     }
 

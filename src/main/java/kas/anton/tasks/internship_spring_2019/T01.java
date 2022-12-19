@@ -16,8 +16,9 @@ public class T01 {
     public static void main(String[] args) {
         String s;
         try (Scanner scanner = new Scanner(System.in)) {
-            s = scanner.nextLine();
+            s = scanner.nextLine().trim();
         }
-        System.out.println("result");
+        String result = s.replaceAll(" +", " ");
+        System.out.println(result);
     }
 }

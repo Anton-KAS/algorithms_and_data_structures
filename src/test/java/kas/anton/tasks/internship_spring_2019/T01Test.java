@@ -22,8 +22,8 @@ import java.util.stream.Stream;
 
 /*
 Пример 1
-Ввод: 6 6 8 8\n1 8 4 9
-Вывод: 49
+Ввод: Gde   moy   keshback  ?
+Вывод: Gde moy keshback ?
  */
 
 @DisplayName("Стажировка весна 2019. Задача 1")
@@ -50,7 +50,7 @@ public class T01Test {
 
     protected static Stream<Arguments> source() {
         return Stream.of(
-                Arguments.of("6 6 8 8\n1 8 4 9", "49")
+                Arguments.of("Gde   moy   keshback  ? ", "Gde moy keshback ?")
         );
     }
 
