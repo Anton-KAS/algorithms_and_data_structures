@@ -1,0 +1,132 @@
+package kas.anton.tasks.internship_spring_2019;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.util.stream.Stream;
+
+/**
+ * {@link T04}
+ * @author Anton Komrachkov
+ * @since (19.12.2022)
+ */
+
+/*
+Пример 1
+Ввод:
+5
+*****
+*...*
+**.**
+*...*
+*****
+2 2
+Вывод: 7
+ */
+
+@DisplayName("Стажировка весна 2019. Задача 4")
+public class T04Test {
+    private final InputStream stdin = System.in;
+    private final PrintStream stdOut = System.out;
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+
+    @BeforeEach
+    public void setUp() {
+        System.setOut(new PrintStream(outputStreamCaptor));
+    }
+
+    @ParameterizedTest
+    @MethodSource("source")
+    public void testMain(String givenData, String expected) {
+        //when
+        System.setIn(new ByteArrayInputStream(givenData.getBytes()));
+        T04.main(null);
+
+        //then
+        Assertions.assertEquals(expected + "\n", outputStreamCaptor.toString());
+    }
+
+    protected static Stream<Arguments> source() {
+        return Stream.of(
+                Arguments.of("5\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "**.**\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "2 2", "7"),
+                Arguments.of("5\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "**.**\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "3 3", "7"),
+                Arguments.of("5\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "**.**\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "4 4", "7"),
+                Arguments.of("5\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "2 2", "3"),
+                Arguments.of("5\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "2 3", "3"),
+                Arguments.of("5\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "*...*\n" +
+                        "*****\n" +
+                        "2 4", "3"),
+                Arguments.of("20\n" +
+                        "********************\n" +
+                        "*...****************\n" +
+                        "*.........*....*...*\n" +
+                        "*....*.........*...*\n" +
+                        "*....*....*........*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "*....*....*....*...*\n" +
+                        "********************\n" +
+                        "2 4", "261")
+        );
+    }
+
+    @AfterEach
+    public void tearDown() {
+        System.setOut(stdOut);
+        System.setIn(stdin);
+    }
+}
